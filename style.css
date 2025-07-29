@@ -1,0 +1,115 @@
+/* Reset and Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Body Background and Text */
+body {
+  background-color: #f0f4ff;
+  color: #0f1c3f;
+  line-height: 1.6;
+}
+
+/* =====================
+   Navigation Bar Styles
+   ===================== */
+header {
+  background-color: #0f1c3f;
+  padding: 20px 0;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  gap: 40px;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+  background-color: #3651b6;
+}
+
+/* =====================
+   Hero Section
+   ===================== */
+#hero {
+  text-align: center;
+  padding: 50px 20px;
+}
+
+#hero h1 {
+  font-size: 48px;
+  color: #0f4295;
+  margin-bottom: 20px;
+}
+
+/* Profile Image */
+#hero img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid #0f4295;
+  margin-bottom: 20px;
+}
+
+/* Paragraph Styling */
+#hero p {
+  max-width: 600px;
+  margin: 0 auto;
+  font-size: 25px;
+  padding: 0 10px;
+  font-weight: bold;
+}
+
+/* =====================
+   Responsive Design
+   ===================== */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  #hero h1 {
+    font-size: 36px;
+  }
+
+  #hero img {
+    width: 120px;
+    height: 120px;
+  }
+}
+
+@media (max-width: 480px) {
+  nav a {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+
+  #hero h1 {
+    font-size: 28px;
+  }
+
+  #hero p {
+    font-size: 14px;
+  }
+}
+
+.highlighted{
+    color: #0f4295;
+    font-size: 30px;
+}
